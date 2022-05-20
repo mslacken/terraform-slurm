@@ -1,0 +1,1 @@
+node1:/srv/home /home nfs sync,hard,rw 0 0
