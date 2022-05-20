@@ -51,13 +51,17 @@
         </type>
     </preferences>
     <users>
-        <user password="$1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0" home="/root" name="root" groups="root"/>
+      <user password="$1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0" home="/root" name="root" groups="root"/>
+      <user password="$1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0" home="/home/auser" name="auser" groups="users"/>
     </users>
     <repository type="rpm-md" alias="kiwi" priority="1">
         <source path="obs://Virtualization:Appliances:Builder/openSUSE_Leap_15.3"/>
     </repository>
     <repository type="rpm-md" alias="Leap_15.4" imageinclude="true">
         <source path="obs://openSUSE:Leap:15.4/standard"/>
+    </repository>
+    <repository alias="local" imageinclude="false" priority="10" repository_gpgcheck="false" package_gpgcheck="false">
+      <source path="dir://#LOCAL#"/>
     </repository>
     <packages type="image">
         <package name="checkmedia"/>
