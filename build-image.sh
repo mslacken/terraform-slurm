@@ -10,7 +10,7 @@ EOF
   done
   exit 0
 fi
-DISTRO=$1
+DISTRO=${1%/}
 kiwicmd="--profile Disk system build"
 if [ $DISTRO == "tw" ] ; then 
   kiwicmd="--type oem system build"
