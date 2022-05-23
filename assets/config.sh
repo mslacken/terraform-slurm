@@ -69,10 +69,11 @@ chown -R  auser:users /home/auser
 #======================================
 # munge key
 #--------------------------------------
-groupadd -r munge
-useradd -r -g munge -d /run/munge -s /bin/false -c "MUNGE user" munge
-chown -R munge:munge /etc/munge
-chmod 600 /etc/munge/munge.key
+#groupadd -r munge
+#useradd -r -g munge -d /run/munge -s /bin/false -c "MUNGE user" munge
+#chown -R munge:munge /etc/munge
+#/usr/sbin/mungekey -c -b 8192
+#chmod 600 /etc/munge/munge.key
 
 #======================================
 # nfs settings
